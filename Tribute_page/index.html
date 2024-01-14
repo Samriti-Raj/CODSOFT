@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tribute to Albert Einstein</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Albert Einstein</h1>
+        <h3>1879 - 1995</h3>
+    </header>
+
+    <main>
+        <div class="slider">
+            <div class="slides">
+                <img src="https://www.princeton.edu/sites/default/files/styles/1x_full_2x_half_crop/public/images/2022/03/Albert_Einstein_Head_H3000x1688.jpg?itok=QUAc_yMr" alt="Image 1">
+                <img src="https://w0.peakpx.com/wallpaper/958/205/HD-wallpaper-albert-einstein-thinker-german-quote-physics-genius-theoretical-physicist-theory-of-relativity.jpg" alt="Image 2"/>
+                <img src="https://w0.peakpx.com/wallpaper/763/430/HD-wallpaper-albert-einstein-man-personality-physical.jpg" alt="Image 3"/>
+                <img src="https://w0.peakpx.com/wallpaper/574/490/HD-wallpaper-a-true-genius-einstein-albert-male-genius.jpg" alt="Image 3"/>
+            </div>
+        </div>
+        <div id="bio">
+            <section id="intro">
+                <h2>Introduction</h2>
+                <p>Albert Einstein, born on March 14, 1879, in Ulm, Germany, was a renowned theoretical physicist known for his groundbreaking contributions to physics and his theory of relativity.</p>
+            </section>
+    
+            <section id="achievements">
+                <h2>Achievements</h2>
+                <p>Einstein's most famous equation, <em>E=mc²</em>, revolutionized our understanding of the relationship between mass and energy. His theory of general relativity transformed our perception of space, time, and gravity, reshaping the field of theoretical physics.</p>
+                <p>He was awarded the Nobel Prize in Physics in 1921 for his explanation of the photoelectric effect, a critical step in the development of quantum theory.</p>
+            </section>
+    
+            <section id="legacy">
+                <h2>Legacy</h2>
+                <p>Beyond his scientific achievements, Einstein's advocacy for civil rights, pacifism, and humanitarian causes cemented his status as a cultural icon. His insightful quotes and philosophical musings on life, curiosity, and imagination continue to inspire generations.</p>
+            </section>
+    
+            <section id="impact">
+                <h2>Impact on Science and Society</h2>
+                <p>Einstein's theories provided the foundation for numerous technological advancements, from nuclear energy to GPS technology. His ideas continue to shape scientific inquiry and our understanding of the universe.</p>
+            </section>
+        </div>    
+        
+    </main>
+
+    <script>
+        let slideIndex = 0;
+        
+        function showSlides() {
+            const slides = document.querySelectorAll('.slides img');
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            slides[slideIndex - 1].style.display = 'block';
+            setTimeout(showSlides, 1000); 
+        }
+        showSlides();
+
+    </script>
+
+    <footer>
+        <p>&copy; 2024 Samriti Raj</p>
+    </footer>
+</body>
+</html>
+
